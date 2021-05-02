@@ -5,10 +5,11 @@ dataset = os.environ["INPUT_DATASET"]
 target = os.environ["INPUT_TARGET"]
 usecase = os.environ["INPUT_USECASE"]
 
-print(os.environ["GITHUB_REPOSITORY"])
 
-dataset_path = "https://raw.githubusercontent.com/legolas49/pycaret-automl-test/master/poker.csv"
-data = pd.read_csv(dataset_path)
+
+datasetpath = "https://raw.githubusercontent.com/legolas49/pycaret-automl-test/master/poker.csv"
+print(datasetpath)
+data = pd.read_csv(datasetpath)
 data.head()
 
 if usecase == 'regression':
